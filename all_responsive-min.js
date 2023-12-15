@@ -196,10 +196,12 @@
         guid: 1,
         support: y
     }),
+    
     "function" == typeof Symbol && (S.fn[Symbol.iterator] = t[Symbol.iterator]),
     S.each("Boolean Number String Function Array Date RegExp Object Error Symbol".split(" "), function(e, t) {
         n["[object " + t + "]"] = t.toLowerCase()
     });
+    //★functionはL1110まで。全部コメントアウトだと動かない
     var d = function(n) {
         var e, d, b, o, i, h, f, g, w, u, l, T, C, a, E, v, s, c, y, S = "sizzle" + 1 * new Date, p = n.document, k = 0, r = 0, m = ue(), x = ue(), A = ue(), N = ue(), D = function(e, t) {
             return e === t && (l = !0),
@@ -1106,6 +1108,7 @@
     S.isXMLDoc = d.isXML,
     S.contains = d.contains,
     S.escapeSelector = d.escape;
+    /*
     var h = function(e, t, n) {
         var r = []
           , i = void 0 !== n;
@@ -1144,7 +1147,8 @@
         }))
     }
     ,
-      
+    */
+    //★コメントアウトだと動かない  
     S.fn.extend({
         find: function(e) {
             var t, n, r = this.length, i = this;
@@ -1496,6 +1500,7 @@
             return o.promise()
         }
     });
+    
     var W = /^(Eval|Internal|Range|Reference|Syntax|Type|URI)Error$/;
     S.Deferred.exceptionHook = function(e, t) {
         C.console && C.console.warn && e && W.test(e.name) && C.console.warn("jQuery.Deferred exception: " + e.message, e.stack, t)
@@ -1507,6 +1512,7 @@
         })
     }
     ;
+    /*★
     var F = S.Deferred();
     function B() {
         E.removeEventListener("DOMContentLoaded", B),
@@ -1530,6 +1536,8 @@
     S.ready.then = F.then,
     "complete" === E.readyState || "loading" !== E.readyState && !E.documentElement.doScroll ? C.setTimeout(S.ready) : (E.addEventListener("DOMContentLoaded", B),
     C.addEventListener("load", B));
+    ★*/
+
     var $ = function(e, t, n, r, i, o, a) {
         var s = 0
           , u = e.length
@@ -1553,6 +1561,7 @@
     }
       , _ = /^-ms-/
       , z = /-([a-z])/g;
+      /*
     function U(e, t) {
         return t.toUpperCase()
     }
@@ -1608,6 +1617,8 @@
             return void 0 !== t && !S.isEmptyObject(t)
         }
     };
+    */
+    /*
     var Y = new G
       , Q = new G
       , J = /^(?:\{[\w\W]*\}|\[[\w\W]*\])$/
@@ -1642,6 +1653,8 @@
             Y.remove(e, t)
         }
     }),
+    */
+    /*
     S.fn.extend({
         data: function(n, e) {
             var t, r, i, o = this[0], a = o && o.attributes;
@@ -1673,6 +1686,7 @@
             })
         }
     }),
+    */
     S.extend({
         queue: function(e, t, n) {
             var r;
@@ -1740,6 +1754,7 @@
             i.promise(t)
         }
     });
+    
     var ee = /[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source
       , te = new RegExp("^(?:([+-])=|)(" + ee + ")([a-z%]*)$","i")
       , ne = ["Top", "Right", "Bottom", "Left"]
@@ -1784,6 +1799,8 @@
         r.end = i)),
         i
     }
+    
+    /*
     var ue = {};
     function le(e, t) {
         for (var n, r, i, o, a, s, u, l = [], c = 0, f = e.length; c < f; c++)
@@ -1803,6 +1820,8 @@
             null != l[c] && (e[c].style.display = l[c]);
         return e
     }
+    */
+    /*
     S.fn.extend({
         show: function() {
             return le(this, !0)
@@ -1816,6 +1835,8 @@
             })
         }
     });
+    */
+    /*
     var ce, fe, pe = /^(?:checkbox|radio)$/i, de = /<([a-z][^\/\0>\x20\t\r\n\f]*)/i, he = /^$|^module$|\/(?:java|ecma)script/i;
     ce = E.createDocumentFragment().appendChild(E.createElement("div")),
     (fe = E.createElement("input")).setAttribute("type", "radio"),
@@ -1879,6 +1900,7 @@
             }
         return f
     }
+    */
     /*
     var be = /^key/
       , we = /^(?:mouse|pointer|contextmenu|drag|drop)|click/
