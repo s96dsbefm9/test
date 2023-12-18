@@ -1129,7 +1129,9 @@
     function A(e, t) {
         return e.nodeName && e.nodeName.toLowerCase() === t.toLowerCase()
     }
+    */
     var N = /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i;
+    /*
     function D(e, n, r) {
         return m(n) ? S.grep(e, function(e, t) {
             return !!n.call(e, t, e) !== r
