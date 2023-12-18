@@ -233,7 +233,6 @@
             dir: "parentNode",
             next: "legend"
         });
-        /*
         try {
             H.apply(t = O.call(p.childNodes), p.childNodes),
             t[p.childNodes.length].nodeType
@@ -251,7 +250,6 @@
                 }
             }
         }
-        */
         function se(t, e, n, r) {
             var i, o, a, s, u, l, c, f = e && e.ownerDocument, p = e ? e.nodeType : 9;
             if (n = n || [],
@@ -435,7 +433,6 @@
                 }
             }
             ),
-            /*
             b.find.TAG = d.getElementsByTagName ? function(e, t) {
                 return "undefined" != typeof t.getElementsByTagName ? t.getElementsByTagName(e) : d.qsa ? t.querySelectorAll(e) : void 0
             }
@@ -454,10 +451,8 @@
                     return t.getElementsByClassName(e)
             }
             ,
-            */
             s = [],
             v = [],
-            /*
             (d.qsa = K.test(C.querySelectorAll)) && (ce(function(e) {
                 var t;
                 a.appendChild(e).innerHTML = "<a id='" + S + "'></a><select id='" + S + "-\r\\' msallowcapture=''><option selected=''></option></select>",
@@ -472,8 +467,6 @@
                 e.querySelectorAll("\\\f"),
                 v.push("[\\r\\n\\f]")
             }),
-            */
-           /*
             ce(function(e) {
                 e.innerHTML = "<a href='' disabled='disabled'></a><select disabled='disabled'><option/></select>";
                 var t = C.createElement("input");
@@ -491,7 +484,6 @@
                 c.call(e, "[s!='']:x"),
                 s.push("!=", F)
             }),
-            */
             v = v.length && new RegExp(v.join("|")),
             s = s.length && new RegExp(s.join("|")),
             t = K.test(a.compareDocumentPosition),
@@ -606,7 +598,6 @@
             return n
         }
         ,
-        
         (b = se.selectors = {
             cacheLength: 50,
             createPseudo: le,
@@ -838,23 +829,19 @@
                 })
             }
         }).pseudos.nth = b.pseudos.eq,
-
         {
             radio: !0,
             checkbox: !0,
             file: !0,
             password: !0,
             image: !0
-        }
-        )
+        })
             b.pseudos[e] = de(e);
-/*
         for (e in {
             submit: !0,
             reset: !0
         })
             b.pseudos[e] = he(e);
-            */
         function me() {}
         function xe(e) {
             for (var t = 0, n = e.length, r = ""; t < n; t++)
@@ -1258,9 +1245,7 @@
         addBack: function(e) {
             return this.add(null == e ? this.prevObject : this.prevObject.filter(e))
         }
-    })
-    /*
-    ,
+    }),
     S.each({
         parent: function(e) {
             var t = e.parentNode;
@@ -1310,7 +1295,6 @@
             this.pushStack(n)
         }
     });
-    */
     var P = /[^\x20\t\r\n\f]+/g;
     function R(e) {
         return e
@@ -1326,7 +1310,6 @@
             n.apply(void 0, [e])
         }
     }
-    /*
     S.Callbacks = function(r) {
         var e, n;
         r = "string" == typeof r ? (e = r,
@@ -1407,7 +1390,6 @@
         return f
     }
     ,
-    */
     S.extend({
         Deferred: function(e) {
             var o = [["notify", "progress", S.Callbacks("memory"), S.Callbacks("memory"), 2], ["resolve", "done", S.Callbacks("once memory"), S.Callbacks("once memory"), 0, "resolved"], ["reject", "fail", S.Callbacks("once memory"), S.Callbacks("once memory"), 1, "rejected"]]
@@ -18609,7 +18591,6 @@ jQuery.fn.slideView = function(settings) {
 ;
 */
 
-/*
 (function(e) {
     var t = "waitForImages";
     e.waitForImages = {
@@ -19979,9 +19960,6 @@ jQuery.fn.slideView = function(settings) {
         return a
     }
 });
-*/
-
-/*
 ;(function(window) {
     'use strict';
     var docElem = window.document.documentElement;
@@ -20085,9 +20063,6 @@ jQuery.fn.slideView = function(settings) {
     window.cbpScroller = cbpScroller;
 }
 )(window);
-*/
-
-/*
 ;window.Modernizr = function(a, b, c) {
     function z(a) {
         j.cssText = a
@@ -20526,7 +20501,7 @@ Modernizr.load = function() {
     yepnope.apply(window, [].slice.call(arguments, 0))
 }
 ;
-*/
+
 
 const kaoCommonFunctions = {
     giftCardPreview: function(params) {
