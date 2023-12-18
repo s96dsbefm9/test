@@ -1838,7 +1838,6 @@
         }
     });
     */
-    /*
     var ce, fe, pe = /^(?:checkbox|radio)$/i, de = /<([a-z][^\/\0>\x20\t\r\n\f]*)/i, he = /^$|^module$|\/(?:java|ecma)script/i;
     ce = E.createDocumentFragment().appendChild(E.createElement("div")),
     (fe = E.createElement("input")).setAttribute("type", "radio"),
@@ -1902,7 +1901,6 @@
             }
         return f
     }
-    */
     /*
     var be = /^key/
       , we = /^(?:mouse|pointer|contextmenu|drag|drop)|click/
