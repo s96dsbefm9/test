@@ -1620,7 +1620,7 @@
         }
     };
     */
-    /*
+    
     var Y = new G
       , Q = new G
       , J = /^(?:\{[\w\W]*\}|\[[\w\W]*\])$/
@@ -1638,6 +1638,7 @@
                 n = void 0;
         return n
     }
+    /*
     S.extend({
         hasData: function(e) {
             return Q.hasData(e) || Y.hasData(e)
@@ -4540,6 +4541,7 @@
         }(t))))
     }
     );
+    */
     var u = k(Array.prototype.forEach)
       , d = k(Array.prototype.indexOf)
       , f = k(Array.prototype.join)
@@ -4554,6 +4556,7 @@
       , A = k(RegExp.prototype.test)
       , x = L(RegExp)
       , S = L(TypeError);
+      /*
     function k(e) {
         return function(t) {
             for (var n = arguments.length, r = Array(n > 1 ? n - 1 : 0), o = 1; o < n; o++)
