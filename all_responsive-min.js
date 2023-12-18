@@ -1573,9 +1573,11 @@
     var V = function(e) {
         return 1 === e.nodeType || 9 === e.nodeType || !+e.nodeType
     };
+    */
     function G() {
         this.expando = S.expando + G.uid++
     }
+    /*
     G.uid = 1,
     G.prototype = {
         cache: function(e) {
@@ -1803,7 +1805,6 @@
         i
     }
     
-    /*
     var ue = {};
     function le(e, t) {
         for (var n, r, i, o, a, s, u, l = [], c = 0, f = e.length; c < f; c++)
@@ -1823,7 +1824,6 @@
             null != l[c] && (e[c].style.display = l[c]);
         return e
     }
-    */
     /*
     S.fn.extend({
         show: function() {
@@ -4541,7 +4541,6 @@
         }(t))))
     }
     );
-    */
     var u = k(Array.prototype.forEach)
       , d = k(Array.prototype.indexOf)
       , f = k(Array.prototype.join)
@@ -4556,7 +4555,6 @@
       , A = k(RegExp.prototype.test)
       , x = L(RegExp)
       , S = L(TypeError);
-      /*
     function k(e) {
         return function(t) {
             for (var n = arguments.length, r = Array(n > 1 ? n - 1 : 0), o = 1; o < n; o++)
