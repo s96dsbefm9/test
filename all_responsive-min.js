@@ -2547,6 +2547,7 @@
             return Math.round(parseFloat(e))
         }
         var n, r, i, o, a, s, u = E.createElement("div"), l = E.createElement("div");
+        /*
         l.style && (l.style.backgroundClip = "content-box",
         l.cloneNode(!0).style.backgroundClip = "",
         y.clearCloneStyle = "content-box" === l.style.backgroundClip,
@@ -2586,6 +2587,7 @@
                 a
             }
         }))
+        */
     }();
     var _e = ["Webkit", "Moz", "ms"]
       , ze = E.createElement("div").style
@@ -2706,6 +2708,7 @@
             !0 === n || isFinite(o) ? o || 0 : i) : i
         }
     }),
+    /*
     S.each(["height", "width"], function(e, u) {
         S.cssHooks[u] = {
             get: function(e, t, n) {
@@ -2723,6 +2726,7 @@
             }
         }
     }),
+    */
     S.cssHooks.marginLeft = $e(y.reliableMarginLeft, function(e, t) {
         if (t)
             return (parseFloat(Be(e, "marginLeft")) || e.getBoundingClientRect().left - We(e, {
@@ -2783,6 +2787,7 @@
             this
         }
     }).init.prototype = et.prototype,
+    /*
     (et.propHooks = {
         _default: {
             get: function(e) {
@@ -2798,6 +2803,7 @@
             e.elem.nodeType && e.elem.parentNode && (e.elem[e.prop] = e.now)
         }
     },
+    */
     S.easing = {
         linear: function(e) {
             return e
@@ -3250,7 +3256,7 @@
             "class": "className"
         }
     }),
-    
+    /*
     y.optSelected || (S.propHooks.selected = {
         get: function(e) {
             var t = e.parentNode;
@@ -3263,6 +3269,7 @@
             t.parentNode && t.parentNode.selectedIndex)
         }
     }),
+    */
     S.each(["tabIndex", "readOnly", "maxLength", "cellSpacing", "cellPadding", "rowSpan", "colSpan", "useMap", "frameBorder", "contentEditable"], function() {
         S.propFix[this.toLowerCase()] = this
     }),
