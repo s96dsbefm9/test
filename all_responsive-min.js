@@ -2907,6 +2907,7 @@
         l
     }
     
+    /*
     S.Animation = S.extend(ft, {
         tweeners: {
             "*": [function(e, t) {
@@ -2993,7 +2994,8 @@
             t ? ft.prefilters.unshift(e) : ft.prefilters.push(e)
         }
     }),
-    
+    */
+    /*
     S.speed = function(e, t, n) {
         var r = e && "object" == typeof e ? S.extend({}, e) : {
             complete: n || !n && t || m(e) && e,
@@ -3011,6 +3013,8 @@
         r
     }
     ,
+    */
+   /*
     S.fn.extend({
         fadeTo: function(e, t, n, r) {
             return this.filter(ae).css("opacity", 0).show().end().animate({
@@ -3070,6 +3074,8 @@
             })
         }
     }),
+    */
+   /*
     S.each(["toggle", "show", "hide"], function(e, r) {
         var i = S.fn[r];
         S.fn[r] = function(e, t, n) {
@@ -3096,6 +3102,8 @@
             return this.animate(r, e, t, n)
         }
     }),
+    */
+   /*
     S.timers = [],
     S.fx.tick = function() {
         var e, t = 0, n = S.timers;
@@ -3136,6 +3144,7 @@
         })
     }
     ,
+    */
     rt = E.createElement("input"),
     it = E.createElement("select").appendChild(E.createElement("option")),
     rt.type = "checkbox",
