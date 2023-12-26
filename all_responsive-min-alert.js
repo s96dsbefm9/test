@@ -1,5 +1,5 @@
 window.onerror = function(messsage, url, line, colno, error){
-alert("1:" + messsage + "/" + url + "/" + line+ "/" + colno+ "/" + error)
+//alert("1:" + messsage + "/" + url + "/" + line+ "/" + colno+ "/" + error)
 return true
 }
 
@@ -1036,6 +1036,7 @@ event.preventDefault();
         }
         ,
         f = se.compile = function(e, t) {
+            alert(1039)
             var n, v, y, m, x, r, i = [], o = [], a = A[e + " "];
             if (!a) {
                 t || (t = h(e)),
@@ -1087,6 +1088,7 @@ event.preventDefault();
         }
         ,
         g = se.select = function(e, t, n, r) {
+            alert(1091)
             var i, o, a, s, u, l = "function" == typeof e && e, c = !r && h(e = l.selector || e);
             if (n = n || [],
             1 === c.length) {
@@ -1856,6 +1858,7 @@ event.preventDefault();
     
     var ue = {};
     function le(e, t) {
+        alert(1861)
         for (var n, r, i, o, a, s, u, l = [], c = 0, f = e.length; c < f; c++)
             (r = e[c]).style && (n = r.style.display,
             t ? ("none" === n && (l[c] = Y.get(r, "display") || null,
@@ -1920,6 +1923,7 @@ event.preventDefault();
     y.option || (ge.optgroup = ge.option = [1, "<select multiple='multiple'>", "</select>"]);
     var me = /<|&#?\w+;/;
     function xe(e, t, n, r, i) {
+        alert(1926)
         for (var o, a, s, u, l, c, f = t.createDocumentFragment(), p = [], d = 0, h = e.length; d < h; d++)
             if ((o = e[d]) || 0 === o)
                 if ("object" === w(o))
