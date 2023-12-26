@@ -123,6 +123,7 @@ event.preventDefault();
         splice: t.splice
     },
     S.extend = S.fn.extend = function() {
+        alert(126)
         var e, t, n, r, i, o, a = arguments[0] || {}, s = 1, u = arguments.length, l = !1;
         for ("boolean" == typeof a && (l = a,
         a = arguments[s] || {},
@@ -214,6 +215,7 @@ event.preventDefault();
     });
     //★functionはL1110まで。全部コメントアウトだと動かない
     var d = function(n) {
+        alert(216)
         var e, d, b, o, i, h, f, g, w, u, l, T, C, a, E, v, s, c, y, S = "sizzle" + 1 * new Date, p = n.document, k = 0, r = 0, m = ue(), x = ue(), A = ue(), N = ue(), D = function(e, t) {
             return e === t && (l = !0),
             0
@@ -264,7 +266,7 @@ event.preventDefault();
         }
         */
         function se(t, e, n, r) {
-            //alert(257)
+            alert(257)
             var i, o, a, s, u, l, c, f = e && e.ownerDocument, p = e ? e.nodeType : 9;
             if (n = n || [],
             "string" != typeof t || !t || 1 !== p && 9 !== p && 11 !== p)
@@ -1200,6 +1202,7 @@ event.preventDefault();
     //★コメントアウトだと動かない  
     S.fn.extend({
         find: function(e) {
+            alert(1204)
             var t, n, r = this.length, i = this;
             if ("string" != typeof e)
                 return this.pushStack(S(e).filter(function() {
