@@ -1,5 +1,5 @@
 window.onerror = function(messsage, url, line, colno, error){
-//alert("1:" + messsage + "/" + url + "/" + line+ "/" + colno+ "/" + error)
+alert("1:" + messsage + "/" + url + "/" + line+ "/" + colno+ "/" + error)
 return true
 }
 
@@ -264,7 +264,7 @@ event.preventDefault();
         }
         */
         function se(t, e, n, r) {
-            //alert(257)
+            alert(257)
             var i, o, a, s, u, l, c, f = e && e.ownerDocument, p = e ? e.nodeType : 9;
             if (n = n || [],
             "string" != typeof t || !t || 1 !== p && 9 !== p && 11 !== p)
@@ -314,7 +314,7 @@ event.preventDefault();
             return g(t.replace($, "$1"), e, n, r)
         }
         function ue() {
-            //alert(307)
+            alert(307)
             var r = [];
             return function e(t, n) {
                 return r.push(t + " ") > b.cacheLength && delete e[r.shift()],
@@ -326,7 +326,7 @@ event.preventDefault();
             e
         }
         function ce(e) {
-            //alert(319)
+            alert(319)
             var t = C.createElement("fieldset");
             try {
                 return !!e(t)
@@ -338,14 +338,14 @@ event.preventDefault();
             }
         }
         function fe(e, t) {
-            //alert(331)
+            alert(331)
             var n = e.split("|")
               , r = n.length;
             while (r--)
                 b.attrHandle[n[r]] = t
         }
         function pe(e, t) {
-            //alert(338)
+            alert(338)
             var n = t && e
               , r = n && 1 === e.nodeType && 1 === t.nodeType && e.sourceIndex - t.sourceIndex;
             if (r)
@@ -357,26 +357,26 @@ event.preventDefault();
             return e ? 1 : -1
         }
         function de(t) {
-            //alert(349)
+            alert(349)
             return function(e) {
                 return "input" === e.nodeName.toLowerCase() && e.type === t
             }
         }
         function he(n) {
-            //alert(356)
+            alert(356)
             return function(e) {
                 var t = e.nodeName.toLowerCase();
                 return ("input" === t || "button" === t) && e.type === n
             }
         }
         function ge(t) {
-            //alert(363)
+            alert(363)
             return function(e) {
                 return "form"in e ? e.parentNode && !1 === e.disabled ? "label"in e ? "label"in e.parentNode ? e.parentNode.disabled === t : e.disabled === t : e.isDisabled === t || e.isDisabled !== !t && ae(e) === t : e.disabled === t : "label"in e && e.disabled === t
             }
         }
         function ve(a) {
-            //alert(369)
+            alert(369)
             return le(function(o) {
                 return o = +o,
                 le(function(e, t) {
@@ -397,7 +397,7 @@ event.preventDefault();
         }
         ,
         T = se.setDocument = function(e) {
-            //alert(390)
+            alert(390)
             var t, n, r = e ? e.ownerDocument || e : p;
             return r != C && 9 === r.nodeType && r.documentElement && (a = (C = r).documentElement,
             E = !i(C),
@@ -443,7 +443,7 @@ event.preventDefault();
             }
             /*,
             b.find.ID = function(e, t) {
-                ////alert(434)
+                alert(434)
                 if ("undefined" != typeof t.getElementById && E) {
                     var n, r, i, o = t.getElementById(e);
                     if (o) {
@@ -525,7 +525,7 @@ event.preventDefault();
                 return e === r || !(!r || 1 !== r.nodeType || !(n.contains ? n.contains(r) : e.compareDocumentPosition && 16 & e.compareDocumentPosition(r)))
             }
             : function(e, t) {
-                ////alert(516)
+                alert(516)
                 if (t)
                     while (t = t.parentNode)
                         if (t === e)
@@ -534,7 +534,7 @@ event.preventDefault();
             }
             ,
             D = t ? function(e, t) {
-                ////alert(525)
+                alert(525)
                 if (e === t)
                     return l = !0,
                     0;
@@ -542,7 +542,7 @@ event.preventDefault();
                 return n || (1 & (n = (e.ownerDocument || e) == (t.ownerDocument || t) ? e.compareDocumentPosition(t) : 1) || !d.sortDetached && t.compareDocumentPosition(e) === n ? e == C || e.ownerDocument == p && y(p, e) ? -1 : t == C || t.ownerDocument == p && y(p, t) ? 1 : u ? P(u, e) - P(u, t) : 0 : 4 & n ? -1 : 1)
             }
             : function(e, t) {
-                ////alert(533)
+                alert(533)
                 if (e === t)
                     return l = !0,
                     0;
@@ -590,7 +590,7 @@ event.preventDefault();
         }
         ,
         se.attr = function(e, t) {
-            ////alert(581)
+            alert(581)
             (e.ownerDocument || e) != C && T(e);
             var n = b.attrHandle[t.toLowerCase()]
               , r = n && j.call(b.attrHandle, t.toLowerCase()) ? n(e, t, !E) : void 0;
