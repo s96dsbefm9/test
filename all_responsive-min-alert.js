@@ -185,6 +185,7 @@ event.preventDefault();
             return null == t ? -1 : i.call(t, e, n)
         },
         merge: function(e, t) {
+            alert(187)
             for (var n = +t.length, r = 0, i = e.length; r < n; r++)
                 e[i++] = t[r];
             return e.length = i,
@@ -980,6 +981,7 @@ event.preventDefault();
             })
         }
         function Ee(e) {
+            alert(982)
             for (var i, t, n, r = e.length, o = b.relative[e[0].type], a = o || b.relative[" "], s = o ? 1 : 0, u = be(function(e) {
                 return e === i
             }, a, !0), l = be(function(e) {
@@ -4138,6 +4140,7 @@ event.preventDefault();
     2 === Ut.childNodes.length),
     */
     S.parseHTML = function(e, t, n) {
+        alert(4142)
         return "string" != typeof e ? [] : ("boolean" == typeof t && (n = t,
         t = !1),
         t || (y.createHTMLDocument ? ((r = (t = E.implementation.createHTMLDocument("")).createElement("base")).href = E.location.href,
