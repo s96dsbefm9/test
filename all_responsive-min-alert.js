@@ -1925,6 +1925,7 @@ event.preventDefault();
     var me = /<|&#?\w+;/;
     function xe(e, t, n, r, i) {
         alert(1926)
+        /*
         for (var o, a, s, u, l, c, f = t.createDocumentFragment(), p = [], d = 0, h = e.length; d < h; d++)
             if ((o = e[d]) || 0 === o)
                 if ("object" === w(o))
@@ -1954,6 +1955,8 @@ event.preventDefault();
                 while (o = a[c++])
                     he.test(o.type || "") && n.push(o)
             }
+        alert(1957)
+        */
         return f
     }
     /*
