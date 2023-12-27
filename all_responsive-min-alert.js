@@ -188,11 +188,11 @@ event.preventDefault();
         },
         merge: function(e, t) {
             alert(187)
-            for (var n = +t.length, r = 0, i = e.length; r < n; r++) {
+            for (var n = +t.length, r = 0, i = e.length; r < n; r++){
                 e[i++] = t[r];
+                alert("i"+i)
             }
-
-                alert(193)
+            alert(193)
             return e.length = i,
             e
         },
@@ -1253,7 +1253,7 @@ event.preventDefault();
                         m(this[r]) ? this[r](t[r]) : this.attr(r, t[r]);
                 return this
             }
-            alert(1255)
+            alert(1260)
             return (i = E.getElementById(r[2])) && (this[0] = i,
             this.length = 1),
             this
