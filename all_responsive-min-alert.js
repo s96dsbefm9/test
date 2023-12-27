@@ -1237,8 +1237,10 @@ event.preventDefault();
     (S.fn.init = function(e, t, n) {
         //alert(1235)
         var r, i;
-        if (!e)
-            return this;
+        if (!e){
+        alert(1241)
+        return this;
+        }
         if (n = n || j,
         "string" == typeof e) {
             if (!(r = "<" === e[0] && ">" === e[e.length - 1] && 3 <= e.length ? [null, e, null] : q.exec(e)) || !r[1] && t)
@@ -1251,10 +1253,12 @@ event.preventDefault();
                         m(this[r]) ? this[r](t[r]) : this.attr(r, t[r]);
                 return this
             }
+            alert(1255)
             return (i = E.getElementById(r[2])) && (this[0] = i,
             this.length = 1),
             this
         }
+        alert(1260)
         return e.nodeType ? (this[0] = e,
         this.length = 1,
         this) : m(e) ? void 0 !== n.ready ? n.ready(e) : e(S) : S.makeArray(e, this)
