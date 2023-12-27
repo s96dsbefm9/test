@@ -123,7 +123,7 @@ event.preventDefault();
         splice: t.splice
     },
     S.extend = S.fn.extend = function() {
-        alert(126)
+        //alert(126)
         var e, t, n, r, i, o, a = arguments[0] || {}, s = 1, u = arguments.length, l = !1;
         for ("boolean" == typeof a && (l = a,
         a = arguments[s] || {},
@@ -139,7 +139,7 @@ event.preventDefault();
                     i = !1,
                     a[t] = S.extend(l, o, r)) : void 0 !== r && (a[t] = r));
         
-        alert(142)
+        //alert(142)
         return a
     }
     ,
@@ -188,8 +188,11 @@ event.preventDefault();
         },
         merge: function(e, t) {
             alert(187)
-            for (var n = +t.length, r = 0, i = e.length; r < n; r++)
+            for (var n = +t.length, r = 0, i = e.length; r < n; r++) {
                 e[i++] = t[r];
+            }
+
+                alert(193)
             return e.length = i,
             e
         },
@@ -381,7 +384,7 @@ event.preventDefault();
             }
         }
         function ve(a) {
-            alert(369)
+            //alert(369)
             return le(function(o) {
                 return o = +o,
                 le(function(e, t) {
@@ -1232,7 +1235,7 @@ event.preventDefault();
     alert(1233)
     var j, q = /^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]+))$/;
     (S.fn.init = function(e, t, n) {
-        alert(1235)
+        //alert(1235)
         var r, i;
         if (!e)
             return this;
