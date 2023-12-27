@@ -138,6 +138,8 @@ event.preventDefault();
                     o = i && !Array.isArray(n) ? [] : i || S.isPlainObject(n) ? n : {},
                     i = !1,
                     a[t] = S.extend(l, o, r)) : void 0 !== r && (a[t] = r));
+        
+        alert(142)
         return a
     }
     ,
@@ -1227,8 +1229,10 @@ event.preventDefault();
             return !!D(this, "string" == typeof e && k.test(e) ? S(e) : e || [], !1).length
         }
     });
+    alert(1233)
     var j, q = /^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]+))$/;
     (S.fn.init = function(e, t, n) {
+        alert(1235)
         var r, i;
         if (!e)
             return this;
@@ -1254,6 +1258,7 @@ event.preventDefault();
     }
     ).prototype = S.fn,
     j = S(E);
+    alert(1260)
     var L = /^(?:parents|prev(?:Until|All))/
       , H = {
         children: !0,
@@ -1269,6 +1274,7 @@ event.preventDefault();
     
     S.fn.extend({
         has: function(e) {
+            alert(1276)
             var t = S(e, this)
               , n = t.length;
             return this.filter(function() {
@@ -1298,6 +1304,7 @@ event.preventDefault();
             return this.add(null == e ? this.prevObject : this.prevObject.filter(e))
         }
     })
+    alert(1307)
     /*
     ,
     S.each({
@@ -1571,6 +1578,7 @@ event.preventDefault();
         })
     }
     ;
+    alert(1581)
     /*★
     var F = S.Deferred();
     function B() {
