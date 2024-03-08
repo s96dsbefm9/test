@@ -1958,10 +1958,11 @@
                 n.guid || (n.guid = S.guid++),
                 (u = v.events) || (u = v.events = Object.create(null)),
                 (a = v.handle) || (a = v.handle = function(e) {
-                    console.log('e',e)
-                    if(e.type == "scroll") {
+                    if (e.type == "scroll") {
+                        console.log("skip", e)
                         return;
                     }
+                    console.log("e", e)
                     return "undefined" != typeof S && S.event.triggered !== e.type ? S.event.dispatch.apply(t, arguments) : void 0
                 }
                 ),
