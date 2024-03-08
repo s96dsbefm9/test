@@ -1962,6 +1962,10 @@
                         console.log("skip", e)
                         return;
                     }
+                    if (e.type == "resize") {
+                        console.log("skip", e)
+                        return;
+                    }
                     console.log("e", e)
                     return "undefined" != typeof S && S.event.triggered !== e.type ? S.event.dispatch.apply(t, arguments) : void 0
                 }
