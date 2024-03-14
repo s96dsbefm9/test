@@ -1198,6 +1198,12 @@
     listeners.resize.length=0;
     listeners.scroll.length=0;
 
+    window.onerror = function(messsage, url, line, colno, error){
+    alert("1:" + messsage + "/" + url + "/" + line+ "/" + colno+ "/" + error)
+    return true
+}
+
+
 </script>
 
 <noscript><p><img src="?idsite=" style="border:0;" alt="" /></p></noscript>
