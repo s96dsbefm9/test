@@ -1194,22 +1194,20 @@
 		trackContinueCheckoutClick_piwik();
 	});
 
-    var listeners = $._data($(window).get(0), "events");
-    listeners.resize.length=0;
-    listeners.scroll.length=0;
+    //var listeners = $._data($(window).get(0), "events");
+    //listeners.resize.length=0;
+    //listeners.scroll.length=0;
 
     window.onerror = function(messsage, url, line, colno, error){
       alert("1:" + messsage + "/" + url + "/" + line+ "/" + colno+ "/" + error)
       return true
-    });
+    }
     window.addEventListener("unhandledrejection", function (event) {
       alert("2:" + event.reason)
       event.preventDefault();
     });
 
-    
-}
-
+ 
 
 </script>
 
