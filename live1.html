@@ -1194,6 +1194,10 @@
 		trackContinueCheckoutClick_piwik();
 	});
 
+    var listeners = $._data($(window).get(0), "events");
+    listeners.resize.length=0;
+    listeners.scroll.length=0;
+
 </script>
 
 <noscript><p><img src="?idsite=" style="border:0;" alt="" /></p></noscript>
