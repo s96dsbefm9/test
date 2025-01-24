@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Display Json Data</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="test.js"></script>
+  </head>
+  <body>
+    <div>
+      問題を開く<input id="selectfile" type="file" accept=".json"/>
+    </div>
+    <div>
+      成績を開く<input id="loadresult" type="file" accept=".json"/>
+    </div>
+    <div>
+      <input id="saveresult" type="button" value="成績を保存" onclick="saveResult()"/>
+      <input id="reset" type="button" value="リセット" onclick="reset()"/>
+      <input id="sortByScore" type="button" value="成績順" onclick="sortByScore()"/>
+      <input id="sortById" type="button" value="番号順" onclick="sortById()"/>
+    </div>
+    <div class="container">
+        <h1 id="testtitle">Title</h1>
+      </div>
+    <main>
+      <div class="container">
+        <div id="datatable"></div>
+      </div><!-- /.container -->
+    </main>
+  </body>
+</html>
+

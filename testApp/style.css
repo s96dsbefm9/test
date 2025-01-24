@@ -1,0 +1,44 @@
+.hidden{
+    visibility: hidden;
+}
+
+.top-table{
+    width: 100%;
+    border-collapse:collapse;
+    border-collapse:collapse;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.top-table tr:nth-child(even) td {
+	background: #eee;
+}
+
+.no-top-table{
+    width: 100%;
+    border-collapse:collapse;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+td,th{
+    border: none;
+    border-left: 1px solid #333;
+    border-top: 1px solid #333;
+}
+
+.question-choice{
+    width: 60px;
+    vertical-align: middle;
+}
+.question-choice-label{
+    font-size: 16px;
+    vertical-align: middle;
+}
+.question-choice-label-correct{
+    font-weight: bold;
+}
+.main-text{
+    font-size: 14px;
+    padding: 5px;
+}
