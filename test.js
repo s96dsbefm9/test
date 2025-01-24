@@ -71,7 +71,7 @@ function createtable(){
     //console.log(`question id=${question.no}, rate=${question.rate}`);
     var h= '<hr><table class="top-table"><tbody>';
     h+=`<tr><td style="width: 50%; id=${question.no}">質問 #</td><td>スコア ${question.rate}</td></tr>`;
-    h+=`<tr><td colspan="2" class="main-text">${question.question}</td></tr>`;
+    h+=`<tr>${question.question}</tr>`;
     h+='</tbody></table>';
     h+=`<table class="no-top-table"><tbody id="choices_${question.no}">`;
 
@@ -89,8 +89,8 @@ function createtable(){
     h+='</tbody></table>';
     if(question.explanation){
       h+=`<div id="answer_${question.no}"><table class="no-top-table"><tbody>`;
-      h+='<tr><td colspan="2">Explanation</td></tr>';
-      h+=`<tr><td colspan="2" class="main-text">${question.explanation}</td></tr>`;
+      h+='<tr>Explanation</tr>';
+      h+=`<tr>${question.explanation}</tr>`;
       h+='</tbody></table></div>';
     }
     $('#datatable').append(h);
