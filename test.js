@@ -73,7 +73,7 @@ function createtable(){
     h+=`  <div class="lined-box" style="width: 50%;" id="${question.no}">質問 #</div>`;
     h+=`  <div class="lined-box" style="width: 50%;">スコア ${question.rate}</div>`;
     h+=`</div>`;
-    h+=`<div class="lined-box" style="background: #eee;"><span class="main-text">${question.question}</span></div>`;
+    h+=`<div class="lined-box" style="background: #eee;"><label class="main-text">${question.question}</label></div>`;
     h+=`<div id="choices_${question.no}">`;
 
     var choices=sortrandom(question.choices);
