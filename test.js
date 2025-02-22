@@ -69,29 +69,34 @@ function sortrandom(arr0){
 function createtable(){
   for (var question of questions){
     //console.log(`question id=${question.no}, rate=${question.rate}`);
-    var h= '<hr><table class="top-table"><tbody>';
-    h+=`<tr><td style="width: 50%; id=${question.no}">質問 #</td><td>スコア ${question.rate}</td></tr>`;
-    h+=`<tr><td colspan="2" class="main-text">${question.question}</td></tr>`;
-    h+='</tbody></table>';
-    h+=`<table class="no-top-table"><tbody id="choices_${question.no}">`;
+    var h= '<hr><div style="display:flex;">';
+    h+=`  <div class="lined-box" style="width: 50%;" id="${question.no}">質問 #</div>`;
+    h+=`  <div class="lined-box" style="width: 50%;">スコア ${question.rate}</div>`;
+    h+=`</div>`;
+    h+=`<div class="lined-box" style="background: #eee;"><span class="main-text">${question.question}</span></div>`;
+    h+=`<div id="choices_${question.no}">`;
 
     var choices=sortrandom(question.choices);
     //console.log('choices', choices)
     for(var i=0;i<choices.length;i++){
       var choice =choices[i];
-      h+=`<tr id="question_${question.no}_choice_${choice.id}"><td class="question-choice">`;
-      h+=`<input type="checkbox" id="question_${question.no}_choice_${choice.id}_check">`;
-      h+=`<label for="question_${question.no}_choice_${choice.id}_check" class="question-choice-label">${i+1}</label>`;
-      h+=`<label for="question_${question.no}_choice_${choice.id}_check" id="question_${question.no}_choice_${choice.id}_label" class="hidden question-choice-label">(${choice.id})</label></td>`;
-      h+=`<td class="main-text"><label for="question_${question.no}_choice_${choice.id}_check">${choice.text}</label></td></tr>`;
+      h+=`<div class="lined-box" style="width: 100%;">`;
+      h+=`  <div style="display:flex;" id="question_${question.no}_choice_${choice.id}">`;
+      h+=`    <div>`;
+      h+=`      <input type="checkbox" id="question_${question.no}_choice_${choice.id}_check">`;
+      h+=`      <label for="question_${question.no}_choice_${choice.id}_check" class="question-choice-label">${i+1}</label>`;
+      h+=`      <label for="question_${question.no}_choice_${choice.id}_check" id="question_${question.no}_choice_${choice.id}_label" class="hidden question-choice-label">(${choice.id})</label>`;
+      h+=`    </div>`;
+      h+=`    <div class="main-text"><label for="question_${question.no}_choice_${choice.id}_check">${choice.text}</label></div>`;
+      h+=`  </div>`;
+      h+=`</div>`;
     }
-    h+=`<tr><td colspan="2"><input type="button" value="Check Answer" onclick="onclickAnswer(${question.no})" id="${question.no}_answerbtn"/></td></tr>`;
-    h+='</tbody></table>';
+    h+=`<div><input type="button" value="Check Answer" onclick="onclickAnswer(${question.no})" id="${question.no}_answerbtn"/></div>`;
     if(question.explanation){
-      h+=`<div id="answer_${question.no}"><table class="no-top-table"><tbody>`;
-      h+='<tr><td colspan="2">Explanation</td></tr>';
-      h+=`<tr><td colspan="2" class="main-text">${question.explanation}</td></tr>`;
-      h+='</tbody></table></div>';
+      h+=`<div id="answer_${question.no}" class="lined-box" style="display: none;">`;
+      h+='  <div class="lined-box">Explanation</div>';
+      h+=`  <div class="main-text lined-box">${question.explanation}</div>`;
+      h+='</div>';
     }
     $('#datatable').append(h);
     $(`#answer_${question.no}`).hide();
@@ -165,6 +170,7 @@ function saveResult(){
 }
 function reset(){
   for (var question of questions){
+    $(`#answer_${question.no}`).hide();
     for(var choice of question.choices){
       $(`#question_${question.no}_choice_${choice.id}_label`).removeClass('question-choice-label-correct');
       $(`#question_${question.no}_choice_${choice.id}`).css('background-color', '');
